@@ -10,6 +10,8 @@ services:
         image: rocker/tidyverse:latest
         volumes: 
             - /mnt/d/github:/home/rstudio
+        ports: 
+            - "8787:8787"
         environment:
             - DISABLE_AUTH=true   
 #    
