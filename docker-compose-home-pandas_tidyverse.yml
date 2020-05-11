@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+    python-pandas: 
+        image: anarinsk/u20-p38-ds:latest
+        volumes: 
+            - /mnt/c/Users/anari/github:/home/github
+#            
+    rstudio: 
+        image: rocker/tidyverse:latest
+        volumes: 
+            - /mnt/c/Users/anari/github:/home/rstudio
+        ports: 
+            - "8787:8787"
+        environment:
+            - DISABLE_AUTH=true   
+#    
+     
