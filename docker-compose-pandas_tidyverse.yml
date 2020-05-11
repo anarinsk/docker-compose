@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+    python-pandas: 
+        image: anarinsk/u20-p38-ds:latest
+        volumes: 
+            - /mnt/d/github:/home/github
+#            
+    rstudio: 
+        image: rocker/tidyverse:latest
+        volumes: 
+            - /mnt/d/github:/home/rstudio
+        environment:
+            - DISABLE_AUTH=true   
+#    
+     
